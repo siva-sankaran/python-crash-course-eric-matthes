@@ -1,3 +1,6 @@
+from importlib.resources.readers import remove_duplicates
+
+
 def print_each_item_of_list():
     friends_names = ['Kumar', 'Ram', 'Suraj', 'Aundy' ]
     print(friends_names[0])
@@ -41,6 +44,26 @@ def invite_to_dinner():
 
     for guest in guests:
         print(f'Dear {guest.title()}, I like to talk, eat and have nice time with you. Please dine with me.')
+
+# 3-7. Shrinking Guest List
+    print(f'remaining persons are : {guests}')
+    print(f'Sorry {len(guests)} folks, I can only invite 2 persons')
+    removed_guest = guests.pop()
+    print(f'I am sorry {removed_guest}, I can\'t invite you for the dinner')
+    removed_guest = guests.pop()
+    print(f'I am sorry {removed_guest}, I can\'t invite you for the dinner')
+    removed_guest = guests.pop()
+    print(f'I am sorry {removed_guest}, I can\'t invite you for the dinner')
+    removed_guest = guests.pop()
+    print(f'I am sorry {removed_guest}, I can\'t invite you for the dinner')
+
+    print(f'Hi {guests[0]}, you are still invited.')
+    print(f'Hi {guests[1]}, you are still invited.')
+
+    del guests[1]
+    del guests[0]
+
+    print(f'remaining persons are : {guests}')
 
 
 # Press the green button in the gutter to run the script.
