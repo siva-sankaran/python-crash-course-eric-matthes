@@ -20,7 +20,30 @@ def print_transport():
     print(f"I want to own a {mode_of_transport[3]}")
     print(f"I want to own a {mode_of_transport[4]}")
 
+#3-3 Guest List
+def invite_to_dinner():
+    guests = [ 'Jeyamohan', 'Sankaran Pillai', 'Sivagurunatha Pillai']
+    for guest in guests:
+        print(f'Dear {guest.title()}, I like to talk, eat and have nice time with you. Please dine with me.')
+## 3-5 Changing Guest List
+
+    print(f'{guests[0]} is not available.')
+    guests[0] = "Gauri"
+
+    for guest in guests:
+        print(f'Dear {guest.title()}, I like to talk, eat and have nice time with you. Please dine with me.')
+
+# 3-6 More Guests
+    print("Hi all, Found a new larger dinner Table. So I will cancel this and send you another invite")
+    guests.insert(0, "Jeyamohan")
+    guests.insert(int(len(guests)/2), "Gandhi")
+    guests.append("Amma")
+
+    for guest in guests:
+        print(f'Dear {guest.title()}, I like to talk, eat and have nice time with you. Please dine with me.')
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_transport()
+    invite_to_dinner()
 
