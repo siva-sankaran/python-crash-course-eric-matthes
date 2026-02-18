@@ -65,8 +65,90 @@ def invite_to_dinner():
 
     print(f'remaining persons are : {guests}')
 
+# 3-8. Seeing the World:
+def seeing_the_world():
+    locations = ['Srilanka', 'China', 'London', 'New York', 'Japan']
+    print(locations)
+    print('Sorted list without modifying the original List')
+    print(sorted(locations))
+    print('Let us see the original list')
+    print(locations)
+    print('sort the list in reverse alphabetical order without modifying')
+    print(sorted(locations, reverse=True))
+    print('Again let us see the original list ')
+    print(locations)
+
+    locations.reverse()
+    print(locations)
+    locations.reverse()
+
+    print('Original list reversed back again so now it is in original order')
+    print(locations)
+
+    locations.sort()
+    print('original list is sorted i.e. modified')
+    print(locations)
+
+    locations.sort(reverse=True)
+    print(locations)
+
+# 3-9. Dinner Guests
+    #Done in 3-7 exercise
+
+# 3-10. Every Function
+def use_every_function():
+    rivers = ['Thamirabharani', 'vaigai', 'Kaveri', 'Paalaaru', 'Krishna', 'Godavari', 'Ganga']
+    print(len(rivers))
+    print(rivers[1].title())
+    print(rivers[-1])
+    rivers[1] = 'Vaigai'
+    print(rivers)
+
+    rivers.append('Narmada')
+
+    mountains = []
+    mountains.append('Pothigai')
+    mountains.append('Ponmudi')
+    mountains.append('Nilagiri')
+    mountains.append('Himalaya')
+
+    print(mountains)
+
+    mountains.insert(2, 'Javvadhu')
+    print(mountains)
+
+    del mountains[1]
+
+    print(mountains)
+
+    any_position_popped = mountains.pop(2)
+    print(any_position_popped)
+
+    mountains.remove('Javvadhu')
+
+    print(mountains)
+
+    books_to_read = ['venmurasu', 'kadal', 'saayaavanam', 'wolf totem']
+    books_to_read.sort()
+    print(books_to_read)
+
+    books_to_read.sort(reverse=True)
+    print(books_to_read)
+
+    want_to_learn = ['writing', 'speaking', 'software architecture', 'cooking', 'psychology']
+    print(sorted(want_to_learn))
+
+    want_to_learn.reverse()
+
+    print(want_to_learn)
+
+# 3-11. Intentional Error
+#     print(want_to_learn[-6])
+    print(want_to_learn[-5])
+    print(len(want_to_learn))
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    invite_to_dinner()
+    use_every_function()
 
